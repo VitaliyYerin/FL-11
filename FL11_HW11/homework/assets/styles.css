@@ -1,0 +1,79 @@
+#root {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.warning-message {
+  text-align: center;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.adding-wrapper {
+  display: flex;
+}
+
+.add-action i {
+  font-size: 40px;
+}
+
+#add-new {
+  width: 100%;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  cursor: move;
+  display: flex;
+}
+
+.todo-item .todo-item-text {
+    cursor: move;
+}
+
+.todo-item label {
+  display: flex;
+  align-items: center;
+}
+
+span.checked {
+  display: none;
+}
+
+.checkbox-item {
+  display: none;
+}
+
+.checkbox-item:checked ~ .checked {
+  display: inline;
+}
+
+.checkbox-item:checked ~ .unchecked {
+  display: none;
+}
+
+.todo-item.editing label,
+.todo-item.editing .edit-btn,
+.todo-item.editing .remove-btn {
+  display: none;
+}
+
+.remove-btn {
+  margin-left: auto;
+}
